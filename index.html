@@ -7,66 +7,89 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>🎮 Jogos Gratis 🎮</h1>
-  <input type="text" id="searchInput" placeholder="Digite o nome do jogo..." onkeyup="filterGames()">
+  <header class="topnav">
+    <div class="hamburger" id="hamburgerBtn" aria-label="Abrir menu" tabindex="0">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav class="menu" id="menuNav">
+    <a href="#" id="linkJogos">Jogos</a>
+    <a href="#" id="linkTutoriais">Tutoriais</a>
+    <a href="https://discord.gg/U7hqfmArvY" target="_blank" id="linkContatos">Discord</a>
+    </nav>
 
-  <div class="game-grid" id="gameGrid">
+  </header>
+  <section id="jogosSection">
+    <h1>🎮 Jogos Gratis 🎮</h1>
+    <input type="text" id="searchInput" placeholder="Digite o nome do jogo..." onkeyup="filterGames()">
+
+    <div class="game-grid" id="gameGrid">
+      
+      <div class="game" onclick="showInfo('Peak')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ6QCuQ6ObxOdDWcJWQxB5fI23kvOYB1aRkQ&s" alt="Peak">
+        <p>Peak</p>
+      </div>
+
+      
+      <div class="game" onclick="showInfo('Palworld')">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Palworld_Steam_artwork.jpg" alt="Palworld">
+        <p>Palworld</p>
+      </div>
+
     
-    <div class="game" onclick="showInfo('Peak')">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ6QCuQ6ObxOdDWcJWQxB5fI23kvOYB1aRkQ&s" alt="Peak">
-      <p>Peak</p>
-    </div>
+      <div class="game" onclick="showInfo('Devour')">
+        <img src="https://images.sftcdn.net/images/t_app-icon-m/p/42997753-cfc7-414f-bd1b-6aba51bf3a09/332932022/devour-dev.jpg" alt="Devour">
+        <p>Devour</p>
+      </div>
 
     
-    <div class="game" onclick="showInfo('Palworld')">
-      <img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Palworld_Steam_artwork.jpg" alt="Palworld">
-      <p>Palworld</p>
-    </div>
+      <div class="game" onclick="showInfo('Outlast')">
+        <img src="https://upload.wikimedia.org/wikipedia/pt/9/9f/Outlast_Cover_Art.jpg" alt="Outlast">
+        <p>Outlast</p>
+      </div>
 
-   
-    <div class="game" onclick="showInfo('Devour')">
-      <img src="https://images.sftcdn.net/images/t_app-icon-m/p/42997753-cfc7-414f-bd1b-6aba51bf3a09/332932022/devour-dev.jpg" alt="Devour">
-      <p>Devour</p>
-    </div>
+    
+      <div class="game" onclick="showInfo('Grounded')">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ab/Grounded_game_cover_art.jpg/250px-Grounded_game_cover_art.jpg" alt="Grounded">
+        <p>Grounded</p>
+      </div>
 
-   
-    <div class="game" onclick="showInfo('Outlast')">
-      <img src="https://upload.wikimedia.org/wikipedia/pt/9/9f/Outlast_Cover_Art.jpg" alt="Outlast">
-      <p>Outlast</p>
-    </div>
+      <div class="game" onclick="showInfo('Stray')">
+        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202206/0300/E2vZwVaDJbhLZpJo7Q10IyYo.png" alt="Stray">
+        <p>Stray</p>
+      </div>
 
-   
-    <div class="game" onclick="showInfo('Grounded')">
-      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ab/Grounded_game_cover_art.jpg/250px-Grounded_game_cover_art.jpg" alt="Grounded">
-      <p>Grounded</p>
-    </div>
+      <div class="game" onclick="showInfo('Drive Beyond Herizons')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe42vw2wZxMbVkYjGEwG7idHJ46PMvuZojiA&s" alt="Drive Beyond Herizons">
+        <p>Drive Beyond Herizons</p>
+      </div>
 
-    <div class="game" onclick="showInfo('Stray')">
-      <img src="https://image.api.playstation.com/vulcan/ap/rnd/202206/0300/E2vZwVaDJbhLZpJo7Q10IyYo.png" alt="Stray">
-      <p>Stray</p>
-    </div>
+      <div class="game" onclick="showInfo('Cuphead')">
+        <img src="https://image.api.playstation.com/vulcan/img/cfn/11307fllh6D-IvbpCa18N0vRggVeRYWA06paTNCj3DENJMScAzW2f3ry4IwFcXBAt9kWXdZGpGoOGjxJ_e9MdordMVAosNhZ.png" alt="Drive Beyond Herizons">
+        <p>Cuphead</p>
+      </div>
 
-    <div class="game" onclick="showInfo('Drive Beyond Herizons')">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe42vw2wZxMbVkYjGEwG7idHJ46PMvuZojiA&s" alt="Drive Beyond Herizons">
-      <p>Drive Beyond Herizons</p>
+      <div class="game" onclick="showInfo('PokéMMO')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNVGSBV6L9xTwvUk6uv4I53mN_BWz5slqYMg&s" alt="PokéMMO">
+        <p>PokéMMO</p>
+      </div>
+      <div class="game" onclick="showInfo('Resident Evil 4  REMAKE')">
+        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202210/0706/EVWyZD63pahuh95eKloFaJuC.png" alt="Resident Evil 4  REMAKE">
+        <p>Resident Evil 4  REMAKE</p>
+      </div>
     </div>
+  </section>
+  <section id="tutoriaisSection" style="display:none;">
+    <h1>Tutoriais</h1>
+    <p>Sem tutoriais.</p>
+  </section>
 
-    <div class="game" onclick="showInfo('Cuphead')">
-      <img src="https://image.api.playstation.com/vulcan/img/cfn/11307fllh6D-IvbpCa18N0vRggVeRYWA06paTNCj3DENJMScAzW2f3ry4IwFcXBAt9kWXdZGpGoOGjxJ_e9MdordMVAosNhZ.png" alt="Drive Beyond Herizons">
-      <p>Cuphead</p>
-    </div>
-
-    <div class="game" onclick="showInfo('PokéMMO')">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNVGSBV6L9xTwvUk6uv4I53mN_BWz5slqYMg&s" alt="PokéMMO">
-      <p>PokéMMO</p>
-    </div>
-    <div class="game" onclick="showInfo('Resident Evil 4  REMAKE')">
-      <img src="https://image.api.playstation.com/vulcan/ap/rnd/202210/0706/EVWyZD63pahuh95eKloFaJuC.png" alt="Resident Evil 4  REMAKE">
-      <p>Resident Evil 4  REMAKE</p>
-    </div>
-
-
-  </div>
+  <section id="contatosSection" style="display:none;">
+    <h2>Contato</h2>
+    <p>Para contato, clique no link abaixo:</p>
+    <a href="https://seulinkdecontato.com" target="_blank" id="contatoLink">Enviar mensagem</a>
+  </section>
 
   <div id="infoSection" class="game-info">
     <h2 id="gameTitle">Título do Jogo</h2>

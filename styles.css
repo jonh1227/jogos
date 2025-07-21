@@ -6,6 +6,64 @@ body {
   padding: 20px;
   text-align: center;
 }
+.topnav {
+  position: relative;
+  background-color: #111820;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hamburger {
+  cursor: pointer;
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+.hamburger div {
+  background-color: cyan;
+  height: 4px;
+  border-radius: 2px;
+}
+
+/* Menu escondido inicialmente */
+.menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  background-color: #1a1f28;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.7);
+  padding: 10px 0;
+  width: 140px;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 20px;
+  color: cyan;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  background-color: #00cccc;
+  color: #111820;
+}
+
+/* Quando ativo, mostra o menu */
+.menu.show {
+  display: flex;
+  flex-direction: column;
+}
 
 h1 {
   font-size: 2.5rem;

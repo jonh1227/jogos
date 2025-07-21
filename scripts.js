@@ -113,3 +113,62 @@ function sortGamesAlphabetically() {
     sortGamesAlphabetically();
 });
  
+const hamburger = document.getElementById('hamburgerBtn');
+const menu = document.getElementById('menuNav');
+
+hamburger.addEventListener('click', () => {
+  menu.classList.toggle('show');
+});
+
+hamburger.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
+    menu.classList.toggle('show');
+  }
+});
+// Pega os links do menu
+const linkJogos = document.getElementById('linkJogos');
+const linkTutoriais = document.getElementById('linkTutoriais');
+const linkContatos = document.getElementById('linkContatos');
+
+// Pega as seções da página
+const jogosSection = document.getElementById('jogosSection');
+const tutoriaisSection = document.getElementById('tutoriaisSection');
+const contatosSection = document.getElementById('contatosSection');
+
+function mostrarSecao(secao) {
+  // Esconde todas as seções
+  jogosSection.style.display = 'none';
+  tutoriaisSection.style.display = 'none';
+  contatosSection.style.display = 'none';
+
+  // Mostra só a selecionada
+  secao.style.display = 'block';
+
+  // Fecha o menu hamburger
+  menu.classList.remove('show');
+}
+
+// Evento para o link Jogos
+linkJogos.addEventListener('click', e => {
+  e.preventDefault();
+  mostrarSecao(jogosSection);
+});
+
+// Evento para o link Tutoriais
+linkTutoriais.addEventListener('click', e => {
+  e.preventDefault();
+  mostrarSecao(tutoriaisSection);
+});
+
+// Evento para o link Contatos - abre o Discord em nova aba e fecha menu
+linkContatos.addEventListener('click', e => {
+  e.preventDefault();
+  window.open(linkContatos.href, '_blank');
+  menu.classList.remove('show');
+});
+
+// Mostrar a seção Jogos por padrão ao carregar a página
+window.addEventListener('DOMContentLoaded', () => {
+  mostrarSecao(jogosSection);
+});
