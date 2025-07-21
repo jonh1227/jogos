@@ -32,7 +32,7 @@ const gameData = {
   "Drive Beyond Herizons": {
     title: "Drive Beyond Herizons",
     description: "É um jogo de exploração e aventura em mundo aberto, onde os jogadores podem dirigir veículos personalizáveis por paisagens extensas e geradas processualmente.",
-    description2: "⚠️ Para baixar, use o link Magnet em seu cliente torrent.  Senha:online-fix.me  magnet:xt=urn:btih:60ac50b1fe5959c8b6843391aa9a674a0f298fa6&dn=Drive%20Beyond%20Horizons&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2fopen.demonii.com%3a1337"
+    description2: "⚠️ Para baixar, use o link Magnet em seu cliente torrent.  Senha:online-fix.me ⚠️ magnet:xt=urn:btih:60ac50b1fe5959c8b6843391aa9a674a0f298fa6&dn=Drive%20Beyond%20Horizons&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2fopen.demonii.com%3a1337"
   },
   "Cuphead": {
     title: "Cuphead",
@@ -43,8 +43,13 @@ const gameData = {
   "PokéMMO": {
     title: "PokéMMO",
     description: "É um jogo online multijogador massivo (MMO) baseado nos jogos clássicos de Pokémon, permitindo que jogadores explorem o mundo, lutem e troquem Pokémon com amigos e outros jogadores ao redor do mundo.",
-    download: "<a href='https://pokemmo.com/pt-BR/downloads/' target='_blank'>⬇️ Baixar PokéMMO</a> | <a href='https://tech.animerigel.com/8G1F8v' target='_blank'>⬇️ Roms</a>"
-    },
+    download: "<a href='https://pokemmo.com/pt-BR/downloads/' target='_blank'>⬇️ Baixar PokéMMO</a> | <a href='https://tech.animerigel.com/8G1F8v' target='_blank'>⬇️Baixar Roms</a>"
+  },
+  "Resident Evil 4  REMAKE": {
+    title: "Resident Evil 4  REMAKE",
+    description: "É uma reimaginação do clássico jogo de 2005, oferecendo uma experiência de terror de sobrevivência modernizada com gráficos, jogabilidade e enredo atualizados.",
+    description2: "⚠️ Para baixar, use o link Magnet em seu cliente torrent.⚠️   magnet:?xt=urn:btih:A4349A511DAFAA704C33A25065C34AB980803707&dn=Resident.Evil.4-EMPRESS&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce"
+  },
 };
 
 function showInfo(gameName) {
