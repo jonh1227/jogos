@@ -2,32 +2,32 @@ const gameData = {
   "Peak": {
     title: "Peak",
     description: "É um jogo cooperativo de escalada, onde jogadores trabalham juntos para sobreviver e alcançar o topo de uma montanha em constante mudança.",
-    download: "<a href='https://pixeldrain.com/u/L1quD4eY' target='_blank'>⬇️ Baixar Peak</a>"
+    download: "<a href='https://tech.animerigel.com/Peak' target='_blank'>⬇️ Baixar Peak</a>"
   },
   "Palworld": {
     title: "Palworld",
     description: "É um jogo de sobrevivência e crafting em mundo aberto, onde os jogadores exploram um ambiente hostil com criaturas chamadas Pals.",
-    download: "<a href='https://steamrip.com/palworld-free-download-2p/' target='_blank'>⬇️ Baixar Palworld</a>"
+    download: "<a href='https://tech.animerigel.com/Palworld' target='_blank'>⬇️ Baixar Palworld</a>"
   },
   "Devour": {
     title: "Devour",
     description: "É um jogo de terror cooperativo para 1 a 4 jogadores onde o objetivo é impedir que líderes de culto possuídos arrastem os jogadores para o inferno",
-    download: "<a href='https://koramaup.com/2mSv' target='_blank'>⬇️ Parte 1</a> | <a href='https://1cloudfile.com/Lp1w' target='_blank'>⬇️ Parte 2</a>"
+    download: "<a href='https://tech.animerigel.com/Devour' target='_blank'>⬇️ Parte 1</a> | <a href='https://tech.animerigel.com/Devour2' target='_blank'>⬇️ Parte 2</a>"
   },
   "Outlast": {
     title: "Outlast",
     description: "É um jogo de terror em primeira pessoa onde o jogador assume o papel do jornalista independente Miles Upshur, que investiga um asilo de doentes mentais chamado Mount Massive, nas montanhas do Colorado.",
-    download: "<a href='https://megaup.net/4Mqe/Outlast.Inclu.DLC.GOG.part1.rar' target='_blank'>⬇️ Parte 1</a> | <a href='https://megaup.net/4Mq3/Outlast.Inclu.DLC.GOG.part2.rar' target='_blank'>⬇️ Parte 2</a>"
+    download: "<a href='https://tech.animerigel.com/Outlast' target='_blank'>⬇️ Parte 1</a> | <a href='https://tech.animerigel.com/Outlast2' target='_blank'>⬇️ Parte 2</a>"
   },
   "Grounded": {
     title: "Grounded",
     description: "Sobrevivência em um quintal onde você é do tamanho de uma formiga.",
-    download: "<a href='https://vikingf1le.us.to/f/kJDTTgwvsp' target='_blank'>⬇️ Baixar Grounded</a>"
+    download: "<a href='https://tech.animerigel.com/Grounded' target='_blank'>⬇️ Baixar Grounded</a>"
   },
   "Stray": {
     title: "Stray",
     description: "É um jogo de aventura em terceira pessoa que coloca o jogador no controle de um gato de rua em uma cidade cibernética decadente",
-    download: "<a href='https://megaup.net/1Wj2b/Stray_v1.5-Razor1911.part1.rar' target='_blank'>⬇️ Parte 1</a> | <a href='https://megaup.net/1Wj1U/Stray_v1.5-Razor1911.part2.rar' target='_blank'>⬇️ Parte 2</a>"
+    download: "<a href='https://tech.animerigel.com/Stray' target='_blank'>⬇️ Parte 1</a> | <a href='https://tech.animerigel.com/Stray2' target='_blank'>⬇️ Parte 2</a>"
   },
   "Drive Beyond Herizons": {
     title: "Drive Beyond Herizons",
@@ -37,13 +37,13 @@ const gameData = {
   "Cuphead": {
     title: "Cuphead",
     description: "É um clássico jogo de ação de corridas e armas altamente focalizado em batalhas de chefes.",
-    download: "<a href='https://pixeldrain.com/u/N4ewAqGs' target='_blank'>⬇️ Baixar Cuphead</a>"
+    download: "<a href='https://tech.animerigel.com/EYCdlwh' target='_blank'>⬇️ Baixar Cuphead</a>"
     },
     
   "PokéMMO": {
     title: "PokéMMO",
     description: "É um jogo online multijogador massivo (MMO) baseado nos jogos clássicos de Pokémon, permitindo que jogadores explorem o mundo, lutem e troquem Pokémon com amigos e outros jogadores ao redor do mundo.",
-    download: "<a href='https://pokemmo.com/pt-BR/downloads/' target='_blank'>⬇️ Baixar PokéMMO</a> | <a href='https://drive.google.com/drive/folders/1jRpIHC_ukBvs4kREwKUyA-nt7_Ugdu_j' target='_blank'>⬇️ Roms</a>"
+    download: "<a href='https://pokemmo.com/pt-BR/downloads/' target='_blank'>⬇️ Baixar PokéMMO</a> | <a href='https://tech.animerigel.com/8G1F8v' target='_blank'>⬇️ Roms</a>"
     },
 };
 
@@ -107,3 +107,4 @@ function sortGamesAlphabetically() {
   window.addEventListener("DOMContentLoaded", () => {
     sortGamesAlphabetically();
 });
+ 
