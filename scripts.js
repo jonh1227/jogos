@@ -50,6 +50,16 @@ const gameData = {
     description: "É uma reimaginação do clássico jogo de 2005, oferecendo uma experiência de terror de sobrevivência modernizada com gráficos, jogabilidade e enredo atualizados.",
     description2: "⚠️ Para baixar, use o link Magnet em seu cliente torrent.⚠️   magnet:?xt=urn:btih:A4349A511DAFAA704C33A25065C34AB980803707&dn=Resident.Evil.4-EMPRESS&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce"
   },
+  "Raft": {
+    title: "Raft",
+    description: "É um jogo de sobrevivência em mundo aberto, onde o jogador deve explorar um oceano vasto, construir uma jangada flutuante, coletar recursos, enfrentar desafios e sobreviver a perigos como tubarões famintos.",
+    download: "<a href='https://tech.animerigel.com/YywIcyW' target='_blank'>⬇️ Parte 1</a> | <a href='https://tech.animerigel.com/H42Xphij' target='_blank'>⬇️ Parte 2</a> | <a href='https://tech.animerigel.com/At6N' target='_blank'>⬇️ Parte 3</a> | <a href='https://tech.animerigel.com/ZOlSBhaY' target='_blank'>⬇️ Parte 4</a> | <a href='https://tech.animerigel.com/mx0OTzP' target='_blank'>⬇️ Parte 5</a>"
+  },
+  "Dragon Ball:Sparking! ZERO": {
+    title: "Dragon Ball:Sparking! ZERO",
+    description: "Torna-te um Super Guerreiro e vive as batalhas destrutivas e sem limites que celebrizaram o Dragon Ball!",
+    download: "<a href='https://tech.animerigel.com/QMie' target='_blank'>⬇️ Parte 1</a> | <a href='https://tech.animerigel.com/uaRTt' target='_blank'>⬇️ Parte 2</a>"
+  },
 };
 
 function showInfo(gameName) {
