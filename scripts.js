@@ -63,9 +63,9 @@ const gameData = {
 };
 
 const itemsPerPage = 6;
-let games = []; // vamos preencher após a ordenação
+let games = []; 
 
-// Função para mostrar página
+
 function showPage(page) {
   const start = (page - 1) * itemsPerPage;
   const end = start + itemsPerPage;
@@ -79,7 +79,7 @@ function showPage(page) {
   });
 }
 
-// Cria paginação com base nos jogos
+
 function criarPaginacao() {
   const paginationContainer = document.querySelector('.pagination');
   const totalPages = Math.ceil(games.length / itemsPerPage);
@@ -97,7 +97,7 @@ function criarPaginacao() {
   if (totalPages > 0) paginationContainer.querySelector('.page').classList.add('active');
 }
 
-// Ordena os jogos e atualiza a grid
+
 function sortGamesAlphabetically() {
   const grid = document.getElementById("gameGrid");
   games = Array.from(grid.querySelectorAll(".game"));
@@ -112,7 +112,7 @@ function sortGamesAlphabetically() {
   games.forEach(game => grid.appendChild(game));
 }
 
-// Filtro de busca
+
 function filterGames() {
   const input = document.getElementById("searchInput").value.toLowerCase();
 
@@ -122,7 +122,7 @@ function filterGames() {
   });
 }
 
-// Exibir informações do jogo
+
 function showInfo(gameName) {
   const info = gameData[gameName];
   if (info) {
@@ -150,7 +150,7 @@ function showInfo(gameName) {
   }
 }
 
-// Menu hamburger
+
 const hamburger = document.getElementById('hamburgerBtn');
 const menu = document.getElementById('menuNav');
 
@@ -165,7 +165,7 @@ hamburger.addEventListener('keydown', (e) => {
   }
 });
 
-// Navegação entre seções
+
 const linkJogos = document.getElementById('linkJogos');
 const linkTutoriais = document.getElementById('linkTutoriais');
 const linkContatos = document.getElementById('linkContatos');
@@ -198,10 +198,10 @@ linkContatos.addEventListener('click', e => {
   menu.classList.remove('show');
 });
 
-// Quando a página carregar
+
 window.addEventListener("DOMContentLoaded", () => {
-  mostrarSecao(jogosSection);     // mostra jogos por padrão
-  sortGamesAlphabetically();      // ordena os jogos
-  criarPaginacao();               // cria paginação
-  showPage(1);                    // mostra a primeira página
+  mostrarSecao(jogosSection);    
+  sortGamesAlphabetically();     
+  criarPaginacao();              
+  showPage(1);                   
 });

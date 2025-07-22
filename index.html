@@ -4,23 +4,25 @@
 <body>
 
   <header class="topnav">
-    <div class="hamburger" id="hamburgerBtn" aria-label="Abrir menu" tabindex="0">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <nav class="menu" id="menuNav">
+  
+
+  <div class="hamburger" id="hamburgerBtn" aria-label="Abrir menu" tabindex="0">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <img src="asta.png" alt="Logo" class="logo-mini" />
+  <nav class="menu" id="menuNav">
     <a href="#" id="linkJogos">Jogos</a>
     <a href="#" id="linkTutoriais">Tutoriais</a>
     <a href="https://discord.gg/U7hqfmArvY" target="_blank" id="linkContatos">Discord</a>
-    </nav>
-
+  </nav>
   </header>
+
 
   <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <img src="asta.png" alt="Logo" id="logo" />
   <title>🎮 Jogos 🎮</title>
   <link rel="stylesheet" href="styles.css" />
   </head>
@@ -96,6 +98,12 @@
         <p>Dragon Ball:Sparking! ZERO</p>
       </div>
 
+
+    </div>
+
+    <div class="pagination">
+    <button class="page active" onclick="showPage(1)">1</button>
+    <button class="page" onclick="showPage(2)">2</button>
     </div>
 
     <div id="infoSection" class="game-info">
@@ -105,10 +113,7 @@
     <div id="gameDownload" style="display: none;"></div>
     </div>
 
-    <div class="pagination">
-    <button class="page active" onclick="showPage(1)">1</button>
-    <button class="page" onclick="showPage(2)">2</button>
-    </div>
+    
 
   </section>
 

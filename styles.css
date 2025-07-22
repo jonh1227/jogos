@@ -12,7 +12,14 @@ body {
   padding: 10px 20px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between; 
+}
+
+
+.logo-mini {
+  height: 60px;
+  border-radius: 12px;
+  margin-left: auto; 
 }
 
 .hamburger {
@@ -94,7 +101,7 @@ input[type="text"] {
 .game-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 30px; /* aumentei o gap pra dar mais respiro */
+  gap: 30px; 
   justify-items: center;
   margin-bottom: 50px;
   padding: 20px;
@@ -106,7 +113,7 @@ input[type="text"] {
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.2s;
-  width: 160px; /* aumentei pra ficar mais proporcional aos da imagem */
+  width: 160px; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -164,7 +171,7 @@ input[type="text"] {
 .description2-box {
   background-color: #1a1a1a;
   padding: 10px 15px;
-  border-left: 4px solid #f1c40f; /* amarelo alerta */
+  border-left: 4px solid #f10f0f; 
   margin-top: 10px;
   border-radius: 6px;
   font-size: 0.95rem;
@@ -172,9 +179,7 @@ input[type="text"] {
   word-break: break-word;
 }
 
-/* === Responsividade === */
 
-/* Para tablets e celulares (telas até 1024px) */
 @media (max-width: 1024px) {
   .game-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -185,10 +190,10 @@ input[type="text"] {
   }
 }
 
-/* Para celulares pequenos (telas até 600px) */
+
 @media (max-width: 600px) {
   .game-grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
 
