@@ -65,6 +65,15 @@ body {
   flex-direction: column;
 }
 
+#logo {
+  display: block;
+  margin: 0 auto 20px auto; /* centraliza e dá margem embaixo */
+  max-width: 300px; /* ajusta o tamanho máximo */
+  height: auto;
+  border-radius: 90px; /* se quiser borda arredondada */
+}
+
+
 h1 {
   font-size: 2.5rem;
   color: #ffffff;
