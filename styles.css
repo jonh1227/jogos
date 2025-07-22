@@ -31,7 +31,7 @@ body {
   border-radius: 2px;
 }
 
-/* Menu escondido inicialmente */
+
 .menu {
   display: none;
   position: absolute;
@@ -59,7 +59,7 @@ body {
   color: #111820;
 }
 
-/* Quando ativo, mostra o menu */
+
 .menu.show {
   display: flex;
   flex-direction: column;
@@ -67,10 +67,10 @@ body {
 
 #logo {
   display: block;
-  margin: 0 auto 20px auto; /* centraliza e dá margem embaixo */
-  max-width: 300px; /* ajusta o tamanho máximo */
+  margin: 0 auto 20px auto;  
+  max-width: 300px; 
   height: auto;
-  border-radius: 90px; /* se quiser borda arredondada */
+  border-radius: 90px; 
 }
 
 
@@ -93,10 +93,11 @@ input[type="text"] {
 
 .game-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 30px; /* aumentei o gap pra dar mais respiro */
   justify-items: center;
   margin-bottom: 50px;
+  padding: 20px;
 }
 
 .game {
@@ -105,7 +106,7 @@ input[type="text"] {
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.2s;
-  width: 150px;
+  width: 160px; /* aumentei pra ficar mais proporcional aos da imagem */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -203,4 +204,32 @@ input[type="text"] {
   input[type="text"] {
     width: 95%;
   }
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 40px 0;
+}
+
+.page {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.2s;
+}
+
+.page:hover {
+  background-color: #ff0000;
+}
+
+.page.active {
+  background-color: #ff0000;
 }

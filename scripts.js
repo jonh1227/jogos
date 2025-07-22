@@ -62,6 +62,67 @@ const gameData = {
   },
 };
 
+const itemsPerPage = 6;
+let games = []; // vamos preencher após a ordenação
+
+// Função para mostrar página
+function showPage(page) {
+  const start = (page - 1) * itemsPerPage;
+  const end = start + itemsPerPage;
+
+  games.forEach((game, index) => {
+    game.style.display = (index >= start && index < end) ? 'flex' : 'none';
+  });
+
+  document.querySelectorAll('.page').forEach((btn, idx) => {
+    btn.classList.toggle('active', idx === page - 1);
+  });
+}
+
+// Cria paginação com base nos jogos
+function criarPaginacao() {
+  const paginationContainer = document.querySelector('.pagination');
+  const totalPages = Math.ceil(games.length / itemsPerPage);
+
+  paginationContainer.innerHTML = '';
+
+  for (let i = 1; i <= totalPages; i++) {
+    const btn = document.createElement('button');
+    btn.className = 'page';
+    btn.textContent = i;
+    btn.onclick = () => showPage(i);
+    paginationContainer.appendChild(btn);
+  }
+
+  if (totalPages > 0) paginationContainer.querySelector('.page').classList.add('active');
+}
+
+// Ordena os jogos e atualiza a grid
+function sortGamesAlphabetically() {
+  const grid = document.getElementById("gameGrid");
+  games = Array.from(grid.querySelectorAll(".game"));
+
+  games.sort((a, b) => {
+    const nameA = a.querySelector("p").textContent.toLowerCase();
+    const nameB = b.querySelector("p").textContent.toLowerCase();
+    return nameA.localeCompare(nameB);
+  });
+
+  grid.innerHTML = "";
+  games.forEach(game => grid.appendChild(game));
+}
+
+// Filtro de busca
+function filterGames() {
+  const input = document.getElementById("searchInput").value.toLowerCase();
+
+  games.forEach(game => {
+    const name = game.querySelector("p").textContent.toLowerCase();
+    game.style.display = name.includes(input) ? 'flex' : 'none';
+  });
+}
+
+// Exibir informações do jogo
 function showInfo(gameName) {
   const info = gameData[gameName];
   if (info) {
@@ -69,7 +130,6 @@ function showInfo(gameName) {
     document.getElementById("gameTitle").innerHTML = info.title;
     document.getElementById("gameDescription").innerHTML = info.description;
 
-    
     const desc2El = document.getElementById("gameDescription2");
     if (info.description2 && info.description2.trim() !== "") {
       desc2El.innerHTML = info.description2;
@@ -86,43 +146,11 @@ function showInfo(gameName) {
       downloadEl.style.display = "none";  
     }
 
-    
     window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
   }
 }
 
-function filterGames() {
-  const input = document.getElementById("searchInput").value.toLowerCase();
-  const games = document.querySelectorAll(".game");
-
-  games.forEach(game => {
-    const name = game.querySelector("p").textContent.toLowerCase();
-    if (name.includes(input)) {
-      game.style.display = "flex";
-    } else {
-      game.style.display = "none";
-    }
-  });
-}
-function sortGamesAlphabetically() {
-  const grid = document.getElementById("gameGrid");
-  const games = Array.from(grid.querySelectorAll(".game"));
-
-  games.sort((a, b) => {
-    const nameA = a.querySelector("p").textContent.toLowerCase();
-    const nameB = b.querySelector("p").textContent.toLowerCase();
-    return nameA.localeCompare(nameB);
-  });
-
-  
-  games.forEach(game => grid.appendChild(game));
-  }
-
-  
-  window.addEventListener("DOMContentLoaded", () => {
-    sortGamesAlphabetically();
-});
- 
+// Menu hamburger
 const hamburger = document.getElementById('hamburgerBtn');
 const menu = document.getElementById('menuNav');
 
@@ -136,49 +164,44 @@ hamburger.addEventListener('keydown', (e) => {
     menu.classList.toggle('show');
   }
 });
-// Pega os links do menu
+
+// Navegação entre seções
 const linkJogos = document.getElementById('linkJogos');
 const linkTutoriais = document.getElementById('linkTutoriais');
 const linkContatos = document.getElementById('linkContatos');
 
-// Pega as seções da página
 const jogosSection = document.getElementById('jogosSection');
 const tutoriaisSection = document.getElementById('tutoriaisSection');
 const contatosSection = document.getElementById('contatosSection');
 
 function mostrarSecao(secao) {
-  // Esconde todas as seções
   jogosSection.style.display = 'none';
   tutoriaisSection.style.display = 'none';
   contatosSection.style.display = 'none';
-
-  // Mostra só a selecionada
   secao.style.display = 'block';
-
-  // Fecha o menu hamburger
   menu.classList.remove('show');
 }
 
-// Evento para o link Jogos
 linkJogos.addEventListener('click', e => {
   e.preventDefault();
   mostrarSecao(jogosSection);
 });
 
-// Evento para o link Tutoriais
 linkTutoriais.addEventListener('click', e => {
   e.preventDefault();
   mostrarSecao(tutoriaisSection);
 });
 
-// Evento para o link Contatos - abre o Discord em nova aba e fecha menu
 linkContatos.addEventListener('click', e => {
   e.preventDefault();
   window.open(linkContatos.href, '_blank');
   menu.classList.remove('show');
 });
 
-// Mostrar a seção Jogos por padrão ao carregar a página
-window.addEventListener('DOMContentLoaded', () => {
-  mostrarSecao(jogosSection);
+// Quando a página carregar
+window.addEventListener("DOMContentLoaded", () => {
+  mostrarSecao(jogosSection);     // mostra jogos por padrão
+  sortGamesAlphabetically();      // ordena os jogos
+  criarPaginacao();               // cria paginação
+  showPage(1);                    // mostra a primeira página
 });
