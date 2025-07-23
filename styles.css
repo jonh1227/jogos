@@ -177,37 +177,6 @@ input[type="text"] {
   word-break: break-word;
 }
 
-
-@media (max-width: 1024px) {
-  .game-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  input[type="text"] {
-    width: 80%;
-  }
-}
-
-
-@media (max-width: 600px) {
-  .game-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-
-  .game {
-    width: 90%;
-    max-width: 300px;
-  }
-
-  .game img {
-    height: auto;
-  }
-
-  input[type="text"] {
-    width: 95%;
-  }
-}
 .pagination {
   display: flex;
   justify-content: center;
@@ -235,4 +204,33 @@ input[type="text"] {
 
 .page.active {
   background-color: #ff0000;
+}
+
+
+/* Telas até 1200px → 4 colunas */
+@media (max-width: 1200px) {
+  #gameGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Telas até 900px → 3 colunas */
+@media (max-width: 900px) {
+  #gameGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Telas até 600px → 2 colunas */
+@media (max-width: 600px) {
+  #gameGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Telas até 400px → 1 coluna */
+@media (max-width: 400px) {
+  #gameGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
