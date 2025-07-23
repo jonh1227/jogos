@@ -1,4 +1,10 @@
 const gameData = {
+  "R.E.P.O.": {
+    title: "R.E.P.O.",
+    description: "É um jogo de terror cooperativo online onde até seis jogadores trabalham juntos para recuperar objetos valiosos de ambientes assombrados.",
+    download: "<a href='https://tech.animerigel.com/qRHV5' target='_blank'>⬇️ Baixar R.E.P.O.</a>"
+  },
+  
   "Peak": {
     title: "Peak",
     description: "É um jogo cooperativo de escalada, onde jogadores trabalham juntos para sobreviver e alcançar o topo de uma montanha em constante mudança.",
