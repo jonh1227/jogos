@@ -98,13 +98,11 @@ input[type="text"] {
   box-sizing: border-box;
 }
 
-.game-grid {
+#gameGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 30px; 
-  justify-items: center;
-  margin-bottom: 50px;
-  padding: 20px;
+  grid-template-columns: repeat(6, 1fr); /* 6 colunas */
+  gap: 16px; /* espaço entre os itens, ajuste como quiser */
+  padding: 20px; /* opcional para espaçamento interno */
 }
 
 .game {

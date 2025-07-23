@@ -68,7 +68,7 @@ const gameData = {
   },
 };
 
-const itemsPerPage = 6;
+const itemsPerPage = 18;
 let games = []; 
 
 
